@@ -1,5 +1,5 @@
 overwrite: true
-schema: 'https://lesson-hasura-d-take.hasura.app/v1/graphql'
+schema: https://lesson-hasura-d-take.hasura.app/v1/graphql
 documents: 'queries/**/*.ts'
 generates:
   types/generated/graphql.tsx:
@@ -7,3 +7,5 @@ generates:
       - 'typescript'
       - 'typescript-operations'
       - 'typescript-react-apollo'
+    config:
+      withHooks: true
