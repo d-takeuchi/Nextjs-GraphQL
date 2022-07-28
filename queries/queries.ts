@@ -17,11 +17,10 @@ export const GET_USERS = gql`
 //       created_at
 //     }
 //   }
-//`
-
+// `
 export const GET_USERIDS = gql`
   query GetUserIds {
-    users(order_by: { created_at: decsc }) {
+    users(order_by: { created_at: desc }) {
       id
     }
   }
