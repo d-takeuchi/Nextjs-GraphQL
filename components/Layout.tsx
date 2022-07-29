@@ -72,7 +72,9 @@ export const Layout: VFC<Props> = ({
           </div>
         </nav>
       </header>
-      <main>{children}</main>
+      <main className="flex flex-1 flex-col justify-center items-center w-screen">
+        {children}
+      </main>
       <footer className="w-full h-12 flex justify-center items-center border-t">
         <a
           className="flex items-center"
