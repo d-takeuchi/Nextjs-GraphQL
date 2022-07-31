@@ -38,7 +38,7 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       users: data.users,
     },
-    revalidate: 1,
+    revalidate: 20, //revalidate の値は秒数を指定。前回から何秒以内のアクセスを無視するか指定
   }
 }
 
